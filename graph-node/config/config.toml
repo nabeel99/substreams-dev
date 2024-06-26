@@ -12,7 +12,7 @@ ingestor = "block_ingestor_node"
 protocol = "substreams"
 shard = "primary"
 provider = [
-    { label = "substreams", details = { type = "substreams", url = "$SUBSTREAMS_ENDPOINT", token = "$SUBSTREAMS_API_TOKEN", features = [
+    { label = "substreams", details = { type = "substreams", url = "http://localhost:9000", token = "", features = [
         "compression",
         "filters",
     ], conn_pool_size = 1 } },

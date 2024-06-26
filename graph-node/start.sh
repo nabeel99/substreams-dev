@@ -7,9 +7,9 @@ export CONFIG=${ROOT}/generated-config.toml
 
 clean=
 
-subgraph=$SUBGRAPH 
+# subgraph=$SUBGRAPH 
 
-graph="node_modules/.bin/graph"
+# graph="node_modules/.bin/graph"
 
 main() {
   pushd "$ROOT" &> /dev/null
