@@ -8,11 +8,11 @@ pool_size = 10
 
 [chains]
 ingestor = "block_ingestor_node"
-[chains.solana-mainnet]
+[chains.solana-mainnet-beta]
 protocol = "substreams"
 shard = "primary"
 provider = [
-    { label = "substreams", details = { type = "substreams", url = "http://localhost:9000", token = "", features = [
+    { label = "substreams", details = { type = "substreams", url = "http://host.docker.internal:9000", token = "", features = [
         "compression",
         "filters",
     ], conn_pool_size = 1 } },
